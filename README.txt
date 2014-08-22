@@ -3,8 +3,8 @@ Contributors: PerfectSolution
 Donate link: http://perfect-solution.dk/donation
 Tags: gateway, woo commerce, quickpay, quick pay, gateway, integration, woocommerce, woocommerce quickpay, payment, payment gateway
 Requires at least: 3.5.0
-Tested up to: 3.9.0
-Stable tag: 2.1.6
+Tested up to: 3.9.2
+Stable tag: 2.2.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,10 @@ With WooCommerce Quickpay, you are able to integrate your Quickpay gateway to yo
 6. You are good to go.
 
 == Changelog ==
-= 2.1.6 = 
+= 2.2.0 =
+* Added support for auto-detection of language and currency when the WPML and WooCommerce Multilingual are installed.
+
+= 2.1.6 =
 * Optimized fee handling
 
 = 2.1.5 =
@@ -89,18 +92,18 @@ With WooCommerce Quickpay, you are able to integrate your Quickpay gateway to yo
 * Refactoring the majority of existing methods to save a lot of code and implementing better API error handling.
 
 = 1.4.0 =
-* Implement WC_Quickpay::create_md5() which manually sets the order of the md5 checkpoints. 
+* Implement WC_Quickpay::create_md5() which manually sets the order of the md5 checkpoints.
 * Should fix payment integration and missing mails sent out to customers after implementation of protocol v7.
 
 = 1.3.11 =
 * Plugin now uses Quickpay version 7
 
 = 1.3.10 =
-* Feature: Allow customers to select between credit card and iBill when choosing Quickpay as pay method. Credit card is ticket as default option. 		NB: You are required to have an agreement with iBill in order to use this feature properly. 
+* Feature: Allow customers to select between credit card and iBill when choosing Quickpay as pay method. Credit card is ticket as default option. 		NB: You are required to have an agreement with iBill in order to use this feature properly.
 
 = 1.3.9 =
 * 'Capture on complete' now also works on bulk actions.
-	
+
 = 1.3.8 =
 * Short install guide added to README.txt
 
@@ -128,10 +131,10 @@ With WooCommerce Quickpay, you are able to integrate your Quickpay gateway to yo
 = 1.3.0 =
 * Added support for WooCommerce subscription.
 * Now reduces stock when a payment is completed.
-	
+
 = 1.2.2 =
 * Bugfix: Capturing payments from WooCommerce backend caused problems due to missing order_total param in cURL request.
-	
+
 = 1.2.1 =
 * More minor changes to the payment cancellations from Quickpay form.
 
@@ -144,7 +147,7 @@ With WooCommerce Quickpay, you are able to integrate your Quickpay gateway to yo
 = 1.1.2 =
 * Link back to payment page after payment cancellation added.
 
-= 1.1.1 =	
+= 1.1.1 =
 * If a payment is cancelled by user, a $woocommerce->add_error will now be shown, notifying the customer about this. We also post a note to the order about cancellation.
 
 = 1.1.0 =

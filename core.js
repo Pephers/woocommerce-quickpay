@@ -45,4 +45,17 @@ function notify(message) {
 			qpform.submit();
 		}, 5000);
 	}
+
+	$(function () {
+
+		$('#woocommerce_quickpay_quickpay_language_autodetect').on('change', function () {
+			$('#woocommerce_quickpay_quickpay_language').attr('disabled', this.checked);
+		});
+
+		$('#woocommerce_quickpay_quickpay_currency_autodetect').on('change', function () {
+			$('#woocommerce_quickpay_quickpay_currency').attr('disabled', this.checked);
+		});
+
+	});
+
 })(jQuery);
