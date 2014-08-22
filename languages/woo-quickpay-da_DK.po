@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Quickpay v2.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-22 21:44+0100\n"
-"PO-Revision-Date: 2014-08-22 21:48+0100\n"
+"POT-Creation-Date: 2014-08-22 21:57+0100\n"
+"PO-Revision-Date: 2014-08-22 21:57+0100\n"
 "Last-Translator: 51st <cr@fiftyfir.st>\n"
 "Language-Team: \n"
 "Language: da_DK\n"
@@ -44,7 +44,7 @@ msgid "Recurring payment failed"
 msgstr "Tilbagevendende betaling fejlede"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:323 ../gateway-quickpay.php:796
+#: ../gateway-quickpay.php:323 ../gateway-quickpay.php:782
 msgid "Credit card"
 msgstr "Kreditkort"
 
@@ -64,7 +64,7 @@ msgid "Payment failure"
 msgstr "Betaling fejlede"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:461 ../gateway-quickpay.php:860
+#: ../gateway-quickpay.php:461 ../gateway-quickpay.php:843
 msgid "Quickpay Payment"
 msgstr "Quickpay betaling"
 
@@ -98,9 +98,9 @@ msgid "Quickpay payment FAILED. Message from Quickpay: %S"
 msgstr "Quickpay betaling FEJLEDE. Besked fra Quickpay: %S"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:606 ../gateway-quickpay.php:703
-#: ../gateway-quickpay.php:710 ../gateway-quickpay.php:717
-#: ../gateway-quickpay.php:820
+#: ../gateway-quickpay.php:606 ../gateway-quickpay.php:689
+#: ../gateway-quickpay.php:696 ../gateway-quickpay.php:703
+#: ../gateway-quickpay.php:824
 msgid "Enable/Disable"
 msgstr "Aktiver/Deaktiver"
 
@@ -164,16 +164,221 @@ msgstr "Sprog"
 msgid "Payment Window Language"
 msgstr "Sprog i betalingsvinduet"
 
+# @ woo-quickpay
 #: ../gateway-quickpay.php:660
+msgid "Currency"
+msgstr "Valuta"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:661
+msgid ""
+"Choose your currency. Please make sure to use the same currency as in your "
+"WooCommerce currency settings."
+msgstr ""
+"Vælg en valuta. Bemærk, at der skal bruges samme valuta som du benytter i "
+"WooCommerce."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:674
+msgid "Cardtype lock"
+msgstr "Cardtype lock"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:676
+msgid ""
+"Default: creditcard. Type in the cards you wish to accept (comma separated). "
+"See the valid payment types here: <b>http://quickpay.dk/features/"
+"cardtypelock/</b>"
+msgstr ""
+"Standard: creditcard. Indtast de korttyper, du vil og kan acceptere "
+"(kommasepareret). Se de gyldige betalingsmetoder her: <b>http://quickpay.dk/"
+"features/cardtypelock/</b>"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:680
+msgid "Enable split payments"
+msgstr "Aktiver del-betalinger."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:682
+msgid "Accept split payments in your system."
+msgstr "Accepter del-betalinger i dit system."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:683
+msgid ""
+"Remember to turn this on in your Quickpay Manager. Click for <a target="
+"\"_blank\" href=\"http://quickpay.dk/features/split-payment/\">help</a>"
+msgstr ""
+"Husk at aktivere dette i din Quickpay Manager. Klik for at få <a target="
+"\"_blank\" href=\"http://quickpay.dk/features/split-payment/\">hjælp</a>"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:687
+msgid "Allow autocapture"
+msgstr "Accepter autocapture"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:690
+msgid "Automatically capture payments."
+msgstr "Træk betalinger automatisk"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:694
+msgid "Capture on complete"
+msgstr "Træk betaling når ordren er completed."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:697
+msgid ""
+"When enabled quickpay payments will automatically be captured when order "
+"state is set to \"Complete\"."
+msgstr ""
+"Når det er aktiveret, vil quickpay-betalinger automatisk blive trukket, når "
+"ordrestatus bliver sat til \"Complete\"."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:701
+msgid "Choose credit card or viaBill on payment selection"
+msgstr "Vælg mellem kreditkort eller viaBill under betalingsmetoder i shoppen."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:704
+msgid ""
+"Allows your customers to choose between viaBill and credit card when "
+"choosing type of payment. <b>(Requires viaBill agreement)</b>"
+msgstr ""
+"TIlbyder dine kunder at vælge mellem viaBill og kreditkort, når de skal "
+"vælge betalingsmetode. <b>(Dette kræver en indløsningsaftale med viaBill)</b>"
+
+#: ../gateway-quickpay.php:708
+msgid "Paii service category"
+msgstr ""
+
+#: ../gateway-quickpay.php:710
+msgid ""
+"This option is used to describe what kind of services your shop is offering. "
+"This is only required when using Paii as merchant."
+msgstr ""
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:752
+msgid "Shop setup"
+msgstr "Shop-indstillinger"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:755
+msgid "Title"
+msgstr "Titel"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:757
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+"Tekst der vises som navn på betalingsmetoden, når dine kunder vælger "
+"Quickpay i checkout-processen."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:758 ../gateway-quickpay.php:834
+msgid "Quickpay"
+msgstr "Quickpay"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:761
+msgid "Customer Message"
+msgstr "Besked til kunde"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:763
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+"Dette styrer hvilken betalingsmetodebeskrivelse, der skal vises til dine "
+"kunder under checkout-processen."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:767
+msgid "Email instructions"
+msgstr "Email-instruktioner"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:769
+msgid "Instructions that will be added to emails."
+msgstr "Eventuelle instruktioner, der bliver tilføjet ordrebekræftelsen"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:773
+msgid "Text on payment button"
+msgstr "Tekst på betalingsknap"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:775
+msgid "This text will show on the button which opens the Quickpay window."
+msgstr "Denne tekst vises på den knap, der åbner Quickpay betalingsvinduet."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:776
+msgid "Open secure Quickpay window."
+msgstr "Åbn sikkert Quickpay-vindue."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:779
+msgid "Credit card label"
+msgstr "Kreditkort tekst"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:781 ../gateway-quickpay.php:787
+msgid "Label shown when choosing credit card or viaBill."
+msgstr ""
+"Tekst der vises, når kunden skal vælge mellem kreditkort eller viaBill."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:785
+msgid "viaBill label"
+msgstr "viaBill tekst"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:788
+msgid "viaBill"
+msgstr "viaBill"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:791
+msgid "Redirect message"
+msgstr "Besked ved viderestilling"
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:793
+msgid ""
+"This message is shown right before the customer is automatically redirected "
+"to the Quickpay payment window."
+msgstr ""
+"Denne besked vises lige inden kunden automatisk viderestilles til Quickpays "
+"betalingsvindue."
+
+# @ woo-quickpay
+#: ../gateway-quickpay.php:794
+msgid ""
+"You will be automatically redirected to the payment window in <strong>5 "
+"seconds</strong>. Click on the button below if you are not redirected."
+msgstr ""
+"Du vil om <strong>5 sekunder</strong> automatisk blive viderestillet til "
+"betalingsvinduet. Klik på knappen nedenfor, hvis viderestillingen ikke sker "
+"automatisk."
+
+#: ../gateway-quickpay.php:798
+msgid "WPML integration"
+msgstr "WPML integration"
+
+#: ../gateway-quickpay.php:801
 msgid "Auto-detect language"
 msgstr "Auto-indstil sprong"
 
-#: ../gateway-quickpay.php:662
+#: ../gateway-quickpay.php:803
 msgid ""
 "Auto-detect the current language if WPML is installed (overrides Language)"
 msgstr "Auto-instil the sproget hvis WPML are installeret (overskriver Sprog)"
 
-#: ../gateway-quickpay.php:663
+#: ../gateway-quickpay.php:804
 msgid ""
 "Enable this if the <a href=\"http://wpml.org\" target=\"_blank\">WPML</a> "
 "and <a href=\"http://wpml.org\" target=\"_blank\">WooCommerce Multilingual</"
@@ -190,29 +395,15 @@ msgstr ""
 "er: Danish, German, English, French, Italian, Norwegian, Dutch, Polish, "
 "Swedish."
 
-# @ woo-quickpay
-#: ../gateway-quickpay.php:667
-msgid "Currency"
-msgstr "Valuta"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:668
-msgid ""
-"Choose your currency. Please make sure to use the same currency as in your "
-"WooCommerce currency settings."
-msgstr ""
-"Vælg en valuta. Bemærk, at der skal bruges samme valuta som du benytter i "
-"WooCommerce."
-
-#: ../gateway-quickpay.php:681
+#: ../gateway-quickpay.php:808
 msgid "Auto-detect currency"
 msgstr "Auto-instil valuta"
 
-#: ../gateway-quickpay.php:683
+#: ../gateway-quickpay.php:810
 msgid "Auto-detect currency (overrides Currency)"
 msgstr "Auto-instil valuta (overskriver Sprog)"
 
-#: ../gateway-quickpay.php:684
+#: ../gateway-quickpay.php:811
 msgid ""
 "Enable this if you have the <a href=\"http://wpml.org\" target=\"_blank"
 "\">WooCommerce Multilingual</a> plugin configured with multiple currencies."
@@ -224,199 +415,12 @@ msgstr ""
 "<br>Understøttede valutaer er: DKK, EUR, GBP, NOK, SEK, USD."
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:688
-msgid "Cardtype lock"
-msgstr "Cardtype lock"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:690
-msgid ""
-"Default: creditcard. Type in the cards you wish to accept (comma separated). "
-"See the valid payment types here: <b>http://quickpay.dk/features/"
-"cardtypelock/</b>"
-msgstr ""
-"Standard: creditcard. Indtast de korttyper, du vil og kan acceptere "
-"(kommasepareret). Se de gyldige betalingsmetoder her: <b>http://quickpay.dk/"
-"features/cardtypelock/</b>"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:694
-msgid "Enable split payments"
-msgstr "Aktiver del-betalinger."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:696
-msgid "Accept split payments in your system."
-msgstr "Accepter del-betalinger i dit system."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:697
-msgid ""
-"Remember to turn this on in your Quickpay Manager. Click for <a target="
-"\"_blank\" href=\"http://quickpay.dk/features/split-payment/\">help</a>"
-msgstr ""
-"Husk at aktivere dette i din Quickpay Manager. Klik for at få <a target="
-"\"_blank\" href=\"http://quickpay.dk/features/split-payment/\">hjælp</a>"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:701
-msgid "Allow autocapture"
-msgstr "Accepter autocapture"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:704
-msgid "Automatically capture payments."
-msgstr "Træk betalinger automatisk"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:708
-msgid "Capture on complete"
-msgstr "Træk betaling når ordren er completed."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:711
-msgid ""
-"When enabled quickpay payments will automatically be captured when order "
-"state is set to \"Complete\"."
-msgstr ""
-"Når det er aktiveret, vil quickpay-betalinger automatisk blive trukket, når "
-"ordrestatus bliver sat til \"Complete\"."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:715
-msgid "Choose credit card or viaBill on payment selection"
-msgstr "Vælg mellem kreditkort eller viaBill under betalingsmetoder i shoppen."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:718
-msgid ""
-"Allows your customers to choose between viaBill and credit card when "
-"choosing type of payment. <b>(Requires viaBill agreement)</b>"
-msgstr ""
-"TIlbyder dine kunder at vælge mellem viaBill og kreditkort, når de skal "
-"vælge betalingsmetode. <b>(Dette kræver en indløsningsaftale med viaBill)</b>"
-
-#: ../gateway-quickpay.php:722
-msgid "Paii service category"
-msgstr ""
-
-#: ../gateway-quickpay.php:724
-msgid ""
-"This option is used to describe what kind of services your shop is offering. "
-"This is only required when using Paii as merchant."
-msgstr ""
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:766
-msgid "Shop setup"
-msgstr "Shop-indstillinger"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:769
-msgid "Title"
-msgstr "Titel"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:771
-msgid "This controls the title which the user sees during checkout."
-msgstr ""
-"Tekst der vises som navn på betalingsmetoden, når dine kunder vælger "
-"Quickpay i checkout-processen."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:772 ../gateway-quickpay.php:851
-msgid "Quickpay"
-msgstr "Quickpay"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:775
-msgid "Customer Message"
-msgstr "Besked til kunde"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:777
-msgid "This controls the description which the user sees during checkout."
-msgstr ""
-"Dette styrer hvilken betalingsmetodebeskrivelse, der skal vises til dine "
-"kunder under checkout-processen."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:781
-msgid "Email instructions"
-msgstr "Email-instruktioner"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:783
-msgid "Instructions that will be added to emails."
-msgstr "Eventuelle instruktioner, der bliver tilføjet ordrebekræftelsen"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:787
-msgid "Text on payment button"
-msgstr "Tekst på betalingsknap"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:789
-msgid "This text will show on the button which opens the Quickpay window."
-msgstr "Denne tekst vises på den knap, der åbner Quickpay betalingsvinduet."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:790
-msgid "Open secure Quickpay window."
-msgstr "Åbn sikkert Quickpay-vindue."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:793
-msgid "Credit card label"
-msgstr "Kreditkort tekst"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:795 ../gateway-quickpay.php:801
-msgid "Label shown when choosing credit card or viaBill."
-msgstr ""
-"Tekst der vises, når kunden skal vælge mellem kreditkort eller viaBill."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:799
-msgid "viaBill label"
-msgstr "viaBill tekst"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:802
-msgid "viaBill"
-msgstr "viaBill"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:805
-msgid "Redirect message"
-msgstr "Besked ved viderestilling"
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:807
-msgid ""
-"This message is shown right before the customer is automatically redirected "
-"to the Quickpay payment window."
-msgstr ""
-"Denne besked vises lige inden kunden automatisk viderestilles til Quickpays "
-"betalingsvindue."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:808
-msgid ""
-"You will be automatically redirected to the payment window in <strong>5 "
-"seconds</strong>. Click on the button below if you are not redirected."
-msgstr ""
-"Du vil om <strong>5 sekunder</strong> automatisk blive viderestillet til "
-"betalingsvinduet. Klik på knappen nedenfor, hvis viderestillingen ikke sker "
-"automatisk."
-
-# @ woo-quickpay
-#: ../gateway-quickpay.php:818
+#: ../gateway-quickpay.php:822
 msgid "Automatically capture the first payment of a subscription."
 msgstr "Træk den første abonnementsbetaling automatisk"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:821
+#: ../gateway-quickpay.php:825
 msgid ""
 "Automatically capture the first payment of a subscription when order is "
 "complete."
@@ -424,76 +428,76 @@ msgstr ""
 "Træk første betaling for et abonnement automatisk når en ordre er afsluttet."
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:852
+#: ../gateway-quickpay.php:835
 msgid "Allows you to receive payments via Quickpay."
 msgstr "Modtag betalinger via Quickpay"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:872
+#: ../gateway-quickpay.php:855
 msgid "Current payment state"
 msgstr "Nuværende transaktionsstatus"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:875
+#: ../gateway-quickpay.php:858
 msgid "Standard actions"
 msgstr "Standardhandlinger"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:879
+#: ../gateway-quickpay.php:862
 msgid "You are about to CAPTURE this payment"
 msgstr "Du er ved at TRÆKKE denne betaling."
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:879
+#: ../gateway-quickpay.php:862
 msgid "Capture"
 msgstr "Træk"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:884
+#: ../gateway-quickpay.php:867
 msgid "You are about to CANCEL this payment"
 msgstr "Du er ved at ANNULLERE denne betaling"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:884
+#: ../gateway-quickpay.php:867
 msgid "Cancel"
 msgstr "Annuller"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:889
+#: ../gateway-quickpay.php:872
 msgid "You are about to REFUND this payment"
 msgstr "Du er ved at REFUNDERE denne betaling"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:889
+#: ../gateway-quickpay.php:872
 msgid "Refund"
 msgstr "Refunder"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:899
+#: ../gateway-quickpay.php:882
 msgid "Split payment"
 msgstr "Del-betaling"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:901
+#: ../gateway-quickpay.php:884
 msgid "Balance"
 msgstr "Balance"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:904
+#: ../gateway-quickpay.php:887
 msgid "Remaining"
 msgstr "Tilbageværende"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:916
+#: ../gateway-quickpay.php:899
 msgid "Split Capture"
 msgstr "Del-betaling"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:917
+#: ../gateway-quickpay.php:900
 msgid "Split and finalize"
 msgstr "Del-betal og afslut"
 
 # @ woo-quickpay
-#: ../gateway-quickpay.php:1063
+#: ../gateway-quickpay.php:1046
 msgid "Payment Fee"
 msgstr "Betalingsgebyr"
